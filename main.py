@@ -107,7 +107,7 @@ def error(num, msg):
 def error_003(msg):
     return error('003', msg+' is invalid')
 
-config_file = open('config')
+config_file = open('host.conf')
 _host, _port = config_file.read().split(':')
 config_file.close()
 run(host=_host, port=_port)

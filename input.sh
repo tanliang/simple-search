@@ -54,7 +54,7 @@ _handle()
 }
 
 echo "====================== input begin at `date +"%Y-%m-%d %H:%M:%S"` ==========="
-host=`cat config`
+host=`cat host.conf`
 for f in input/*
 do
     handleInput "$f"
