@@ -1,0 +1,4 @@
+0
+0
+select id,id as info,length(food_name) as score,concat_ws(',',food_name) as data from xxx where id > '<re>'
+mysql -hxxx -uroot -pxxx -Dxxx -N

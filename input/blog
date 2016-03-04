@@ -1,0 +1,4 @@
+1
+128
+select id,concat('<tb>_',id) as info,id as score,concat(stringdecode(title),stringdecode(body)) as data from blog<tb> where id > '<re>'
+mysql -hxxx -uroot -pxxx -Dxxx<db> -N
