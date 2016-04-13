@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #encoding=utf-8
 import hashlib
+from gevent import monkey; monkey.patch_all()
 import json
 import time
 import os
@@ -110,5 +111,5 @@ def error_003(msg):
 config_file = open('host.conf')
 _host, _port = config_file.read().split(':')
 config_file.close()
-run(host=_host, port=_port)
+run(host=_host, port=_port, server='gevent')
 

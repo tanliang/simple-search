@@ -7,10 +7,10 @@ python 2.6.6/2.7.5 && centos
 # 依赖
 <em>如提示  Temporary failure in name resolution，请多试几次</em>
 
+* pip install gevent (yum install python-devel)
 * easy_install redis
 * easy_install bottle
 * easy_install bottle-redis
-
 
 # 启动
 nohup python main.py &
